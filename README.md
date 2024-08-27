@@ -10,14 +10,15 @@ Run pytest tests.
 
 Key Vocab
 
-Interpreter: a program that executes other programs. Python programs require the Python interpreter to be installed on your computer so that they can be run.
-Python Shell: an interactive interpreter that can be accessed from the command line.
-Data Type: a specific kind of data. The Python interpreter uses these types to determine which actions can be performed on different data items.
-Exception: a type of error that can be predicted and handled without causing a program to crash.
-Code Block: a collection of code that is interpreted together. Python groups code blocks by indentation level.
-Function: a named code block that performs a sequence of actions when it is called.
-Scope: the area in your program where a specific variable can be called.
-Introduction
+1. Interpreter: a program that executes other programs. Python programs require the Python interpreter to be installed on your computer so that they can be run.
+2. Python Shell: an interactive interpreter that can be accessed from the command line.
+3. Data Type: a specific kind of data. The Python interpreter uses these types to determine which actions can be performed on different data items.
+4. Exception: a type of error that can be predicted and handled without causing a program to crash.
+5. Code Block: a collection of code that is interpreted together. Python groups code blocks by indentation level.
+6. Function: a named code block that performs a sequence of actions when it is called.
+7. Scope: the area in your program where a specific variable can be called.
+
+INTRODUCTION.
 In this lesson, you'll get some practice running Python code, and see a few different ways to check what your code is doing. Make sure to code along to get comfortable in this new environment!
 
 Creating a Python Application
