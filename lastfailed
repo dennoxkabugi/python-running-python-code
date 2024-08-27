@@ -1,0 +1,6 @@
+{
+  "testing/app_test.py::test_app_py_exists": true,
+  "testing/app_test.py::TestAppPy::test_app_py_exists": true,
+  "testing/app_test.py::TestAppPy::test_app_py_runs": true,
+  "testing/app_test.py::TestAppPy::test_prints_hello_world": true
+}
