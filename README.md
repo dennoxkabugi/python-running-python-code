@@ -1,6 +1,6 @@
-RUNNING PYTHON CODE.
+#RUNNING PYTHON CODE.
 
-LEARNING GOALS
+#LEARNING GOALS
 
 Run Python code from a file.
 Log output to the terminal.
@@ -11,26 +11,27 @@ Run pytest tests.
 Key Vocab
 
 1. Interpreter: a program that executes other programs. Python programs require the Python interpreter to be installed on your computer so that they can be run.
-2. Python Shell: an interactive interpreter that can be accessed from the command line.
+2. Python Shell: an interactive interpreter accessed from the command line.
 3. Data Type: a specific kind of data. The Python interpreter uses these types to determine which actions can be performed on different data items.
-4. Exception: a type of error that can be predicted and handled without causing a program to crash.
+4. Exception: an error that can be predicted and handled without causing a program to crash.
 5. Code Block: a collection of code that is interpreted together. Python groups code blocks by indentation level.
 6. Function: a named code block that performs a sequence of actions when it is called.
 7. Scope: the area in your program where a specific variable can be called.
 
-INTRODUCTION.
+#INTRODUCTION.
+
 In this lesson, you'll get some practice running Python code, and see a few different ways to check what your code is doing. Make sure to code along to get comfortable in this new environment!
 
-Creating a Python Application
-Let's dive right in. To get started on any new Python application, the first thing we need is a file. Fork and clone this lesson from GitHub, then create a new file in this repo's lib/ directory called app.py. In this file, add the following:
+#CREATING A PYTHON APPLICATION
 
-# lib/app.py
+Let's dive right in. To get started on any new Python application, the first thing we need is a file. Fork and clone this lesson from GitHub, then create a new file in this repo's lib/ directory called app.py. In this file, add the following:
+lib/app.py
 print("Hello world!")
-print() is a built-in Python function that will output a string of text to the terminal. It's the Python equivalent of console.log() in JavaScript. It will print the string "Hello world!" along with a line break at the end.
+print() is a built-in Python function that will output a text string to the terminal. It's the Python equivalent of console.log() in JavaScript. It will print the string "Hello world!" along with a line break at the end.
 
 The line above print() is a Python comment. In Python, any line that starts with a # won't be executed by the interpreter. This is the Python equivalent of // in JavaScript.
 
-Running Python Applications
+#Running Python Applications
 Unlike JavaScript, you won't be running Python applications in the browser. Instead, you'll need to use the Python interpreter to run your code from the terminal. You can check which version of Python you're using with this command:
 
 $ python --version
@@ -41,36 +42,33 @@ $ python lib/app.py
 Hello world!
 Congrats on running your first Python application! 🎉
 
-Displaying Data with "print()"
+#Displaying Data with "print()"
 Now that we have a place to write some code, let's explore a few of Python's built-in options for displaying data in different ways.
 
-Standard print() Statements
+#Standard print() Statements
 By default, print() includes a newline character at the end of your string. Try entering several print() statements in a row in lib/app.py:
-
-# lib/app.py
+lib/app.py
 print("Hello world!")
 print("Hello sun!")
 print("Hello sky!")
 What do you see when you execute lib/app.py from the command line?
 
 $ python lib/app.py
-# => Hello world!
-# => Hello sun!
-# => Hello sky!
-Choosing your own print() Ending
-Let's say you're writing a full paragraph and don't need a newline character after every sentence. print() can accommodate that through its optional end parameter. Try modifying your print() statements as follows:
+=> Hello world! => Hello sun!
+=> Hello sky!
 
-# lib/app.py
+#Choosing your print() Ending
+Let's say you're writing a full paragraph and don't need a newline character after every sentence. print() can accommodate that through its optional end parameter. Try modifying your print() statements as follows:
+ lib/app.py
 print("Hello world!", end=" ")
 print("Hello sun!", end="!! ")
 print("Hello sky!", end="!!!\n")
 What do you see when you execute lib/app.py from the command line with these new end strings?
 
-$ python lib/app.py
-# => Hello world! Hello sun!!! Hello sky!!!!
+$ python lib/app.py => Hello world! Hello, sun!!! Hello, sky!!!!
 end can be a string of any length, including characters like the newline \n.
 
-Exploring Python with the Python Interpreter
+#Exploring Python with the Python Interpreter
 Python comes with a command line interpreter (often called the "Python shell") for running a Python REPL (read-evaluate-print-loop) in the terminal, which provides similar functionality to the browser console that you're familiar with from JavaScript. Using the Python shell is a great way to quickly test out some code, or check your syntax, without needing to run an entire application.
 
 To use the Python shell, go into the terminal and enter python:
@@ -97,22 +95,22 @@ In the code above, we've declared a local variable called first_number and assig
 
 In Python, it's convention to use underscores ( _ ) to separate words in variables. This is referred to as snake case (as opposed to camel case, which is the convention in JavaScript).
 
-You can exit the Python shell by typing exit(), or pressing ctrl + d.
+You can exit the Python shell by typing exit() or pressing ctrl + d.
 
-Running pytest Tests
+#Running pytest Tests
 All the lessons in the Python curriculum use the pytest library for testing your Python code.
 
 In this lesson, you'll see a testing/ folder with one file, app_test.py. app_test.py is where we've defined tests specifically for this lesson.
 
 pytest is a Python library (the Python equivalent of an npm package) that provides a very simple and clean way to write tests.
 
-Installing pytest
-Each lesson in the Python curriculum will contain a file called Pipfile. This file contains all of the required Python libraries for your work, and restricts them to the repository that you're working in.
+#Installing pytest
+Each lesson in the Python curriculum will contain a file called Pipfile. This file contains all of the required Python libraries for your work and restricts them to the repository that you're working in.
 
 To install pytest and any other required libraries, simply navigate to a folder with a Pipfile and enter pipenv install:
 
 $ pipenv install
-Pipfile.lock not found, creating...
+Pipfile. lock not found, creating...
 Locking [dev-packages] dependencies...
 Building requirements...
 Resolving dependencies...
@@ -122,11 +120,11 @@ Building requirements...
 Resolving dependencies...
 ✔ Success!
 Updated Pipfile.lock (cb35ed)!
-Installing dependencies from Pipfile.lock (cb35ed)...
+Installing dependencies from Pipfile. lock (cb35ed)...
   🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 0/0 — 00:00:00
-To activate this project's virtualenv, run pipenv shell.
+To activate this project's virtualenv, run the pipenv shell.
 Alternatively, run a command inside the virtualenv with pipenv run.
-Now that your pipenv virtual environment is ready to use, enter pipenv shell to start working:
+Now that your pipenv virtual environment is ready to use, enter the pipenv shell to start working:
 
 $ pipenv shell
 Launching subshell in virtual environment...
@@ -199,16 +197,16 @@ testing/app_test.py:16: AssertionError
 FAILED lib/app.py exists in lib directory - AssertionError: assert False
 !!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!
 ============================== 1 failed in 0.01s ===============================
-Instructions
+#Instructions
 To finish this lab, use the print() in the lib/app.py file as described by the tests:
 
 Use print() to display the text on one line: "Hello World! Pass this test, please."
 Using pytest will run the tests. After they are passing, sync your progress using Git. When your tests are all passing and your work is synced, the lab is complete!
 
-Conclusion
+#Conclusion
 This lesson covered a good amount of material, but now you should be familiar with running code in a Python pipenv environment, and using tools like the Python Shell and pytest as well as built-in methods like print() to understand what happens when your Python code is running. You'll need all these tools going forward, so make sure to get practice with all of them as you progress through this phase!
 
-Resources
+#Resources
 Python print() function
 Python Getting Started
 pipenv Documentation
